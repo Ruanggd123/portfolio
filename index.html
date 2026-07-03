@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ruan Damasceno - Engenheiro de Computação em formação pela UFC Sobral | Desenvolvedor Full Stack. Portfólio de projetos, serviços e contato." />
+  <meta name="author" content="Ruan Gomes Damasceno" />
+  <meta name="keywords" content="Ruan Damasceno, portfólio, desenvolvedor full stack, UFC Sobral, Engenharia de Computação, sites, web development" />
+  <meta property="og:title" content="Ruan Damasceno | Desenvolvedor Full Stack" />
+  <meta property="og:description" content="Portfólio de projetos e serviços de desenvolvimento web. Engenheiro de Computação em formação pela UFC Sobral." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/116443411?v=4" />
+  <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/116443411?v=4" />
+  <title>Ruan Damasceno | Desenvolvedor Full Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+    <p>Carregando portfólio...</p>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket"><</span>Ruan<span class="logo-bracket">/></span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link active">Início</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#servicos" class="nav-link">Serviços</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://github.com/Ruanggd123" target="_blank" rel="noopener" class="nav-cta">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">
+          <span class="status-dot"></span> Disponível para novos projetos
+        </span>
+        <h1 class="hero-title">
+          Olá, eu sou o <span class="text-gradient">Ruan Damasceno</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          <span id="typed"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-description">
+          Engenheiro de Computação em formação pela UFC Sobral e Desenvolvedor Full Stack.
+          Crio sites, sistemas web e automações. Transformo ideias em produtos digitais funcionais.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projetos" class="btn btn-primary">
+            <i class="fas fa-laptop-code"></i> Ver Projetos
+          </a>
+          <a href="#contato" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Contato
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/Ruanggd123" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:ruan@example.com" aria-label="E-mail">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="card-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <pre class="card-code"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">nome</span>: <span class="code-string">'Ruan Damasceno'</span>,
+  <span class="code-prop">area</span>: <span class="code-string">'Full Stack'</span>,
+  <span class="code-prop">faculdade</span>: <span class="code-string">'UFC Sobral'</span>,
+  <span class="code-prop">stack</span>: [<span class="code-string">'React'</span>, <span class="code-string">'Node'</span>, <span class="code-string">'Python'</span>],
+  <span class="code-prop">repositorios</span>: <span class="code-number">35</span>,
+  <span class="code-prop">disponivel</span>: <span class="code-keyword">true</span>
+};</code></pre>
+        </div>
+      </div>
+    </div>
+    <a href="#sobre" class="scroll-down" aria-label="Rolar para baixo">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- Sobre -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// sobre</span>
+        <h2 class="section-title">Sobre mim</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Sou estudante de <strong>Engenharia de Computação</strong> na Universidade Federal do Ceará (UFC) - campus Sobral.
+            Atuo como <strong>Desenvolvedor Full Stack</strong>, criando desde landing pages até sistemas completos com
+            backend, banco de dados e integrações externas.
+          </p>
+          <p>
+            Tenho experiência com <strong>React, Node.js, Python, PHP, TypeScript</strong> e bancos de dados como
+            <strong>PostgreSQL, MySQL e Firebase</strong>. Já desenvolvi sistemas de rifas, currículos dinâmicos,
+            automações, projetos acadêmicos e muito mais - confira tudo na seção de projetos.
+          </p>
+          <p>
+            Meu foco é entregar soluções que <strong>resolvam problemas reais</strong>, com código limpo, responsivo
+            e de fácil manutenção. Adoro transformar uma ideia em um produto que o cliente possa usar de verdade.
+          </p>
+          <a href="https://github.com/Ruanggd123" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fab fa-github"></i> Ver meu GitHub
+          </a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number" data-target="35">0</span>
+            <span class="stat-label">Repositórios públicos</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Anos programando</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="6">0</span>
+            <span class="stat-label">Linguagens</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="100" data-suffix="%">0</span>
+            <span class="stat-label">Dedicação</span>
+          </div>
+        </div>
+      </div>
+      <div class="tech-stack">
+        <h3 class="tech-title">Tecnologias que uso</h3>
+        <div class="tech-icons">
+          <div class="tech-item"><i class="fab fa-react"></i><span>React</span></div>
+          <div class="tech-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+          <div class="tech-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+          <div class="tech-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+          <div class="tech-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+          <div class="tech-item"><i class="fab fa-php"></i><span>PHP</span></div>
+          <div class="tech-item"><i class="fab fa-python"></i><span>Python</span></div>
+          <div class="tech-item"><i class="fab fa-java"></i><span>Java</span></div>
+          <div class="tech-item"><i class="fas fa-database"></i><span>SQL</span></div>
+          <div class="tech-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+          <div class="tech-item"><i class="fas fa-fire"></i><span>Firebase</span></div>
+          <div class="tech-item"><i class="fas fa-cloud"></i><span>Cloud</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section class="section section-alt" id="projetos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// projetos</span>
+        <h2 class="section-title">Meus Projetos</h2>
+        <p class="section-sub">Confira os repositórios mais relevantes do meu GitHub. Os projetos são carregados automaticamente.</p>
+      </div>
+      <div class="project-filters" id="project-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="academico">Acadêmico</button>
+        <button class="filter-btn" data-filter="ferramenta">Ferramentas</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <div class="projects-loading">
+          <div class="loader-ring"></div>
+          <p>Buscando repositórios do GitHub...</p>
+        </div>
+      </div>
+      <div class="projects-footer">
+        <a href="https://github.com/Ruanggd123?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">
+          <i class="fab fa-github"></i> Ver todos no GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// serviços</span>
+        <h2 class="section-title">Vendo Sites e Sistemas</h2>
+        <p class="section-sub">Desenvolvimento personalizado para você ou sua empresa. Confira os planos abaixo.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Landing Page</h3>
+          <p class="service-desc">Página única, moderna e responsiva para divulgar seu negócio, produto ou serviço.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Design moderno e responsivo</li>
+            <li><i class="fas fa-check"></i> SEO básico</li>
+            <li><i class="fas fa-check"></i> Formulário de contato</li>
+            <li><i class="fas fa-check"></i> Integração com WhatsApp</li>
+          </ul>
+          <div class="service-price">
+            <span class="price-label">A partir de</span>
+            <span class="price-value">R$ 350</span>
+          </div>
+          <a href="#contato" class="btn btn-outline btn-block">Solicitar orçamento</a>
+        </div>
+
+        <div class="service-card service-featured">
+          <span class="service-badge">Mais procurado</span>
+          <div class="service-icon"><i class="fas fa-store"></i></div>
+          <h3>Site Institucional</h3>
+          <p class="service-desc">Site completo com várias páginas, apresentando serviços, sobre, portfólio e contato.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Até 6 páginas</li>
+            <li><i class="fas fa-check"></i> Design responsivo premium</li>
+            <li><i class="fas fa-check"></i> SEO otimizado</li>
+            <li><i class="fas fa-check"></i> Painel admin opcional</li>
+            <li><i class="fas fa-check"></i> Domínio + hospedagem* </li>
+          </ul>
+          <div class="service-price">
+            <span class="price-label">A partir de</span>
+            <span class="price-value">R$ 800</span>
+          </div>
+          <a href="#contato" class="btn btn-primary btn-block">Solicitar orçamento</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-cogs"></i></div>
+          <h3>Sistema Web</h3>
+          <p class="service-desc">Sistema completo sob medida: cadastros, login, painel admin, integrações com APIs.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Backend + Frontend</li>
+            <li><i class="fas fa-check"></i> Banco de dados</li>
+            <li><i class="fas fa-check"></i> Login / autenticação</li>
+            <li><i class="fas fa-check"></i> Painel administrativo</li>
+            <li><i class="fas fa-check"></i> Integração com APIs</li>
+          </ul>
+          <div class="service-price">
+            <span class="price-label">A partir de</span>
+            <span class="price-value">R$ 1.500</span>
+          </div>
+          <a href="#contato" class="btn btn-outline btn-block">Solicitar orçamento</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Automações</h3>
+          <p class="service-desc">Bots, scripts e integrações que automatizam tarefas repetitivas e economizam seu tempo.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Bots para web/WhatsApp</li>
+            <li><i class="fas fa-check"></i> Scripts de automação</li>
+            <li><i class="fas fa-check"></i> Web scraping</li>
+            <li><i class="fas fa-check"></i> Integrações com APIs</li>
+          </ul>
+          <div class="service-price">
+            <span class="price-label">A partir de</span>
+            <span class="price-value">R$ 400</span>
+          </div>
+          <a href="#contato" class="btn btn-outline btn-block">Solicitar orçamento</a>
+        </div>
+      </div>
+      <p class="services-note">
+        * Valores de referência. Orçamento final varia conforme escopo, prazos e complexidade. Entre em contato para um orçamento personalizado.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="section section-alt" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// contato</span>
+        <h2 class="section-title">Vamos Conversar</h2>
+        <p class="section-sub">Tem uma ideia ou projeto em mente? Me chame e vamos construir juntos.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/Ruanggd123" target="_blank" rel="noopener">github.com/Ruanggd123</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="#" target="_blank" rel="noopener">linkedin.com/in/ruan-damasceno</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>E-mail</h4>
+              <a href="mailto:ruan@example.com">ruan@example.com</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Sobre o que você quer falar" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Detalhe sua ideia ou projeto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> Enviar mensagem
+          </button>
+          <p class="form-success" id="form-success">
+            <i class="fas fa-check-circle"></i> Mensagem enviada! Retornarei em breve.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> Ruan Gomes Damasceno. Feito com
+        <i class="fas fa-heart"></i> e muito café.
+      </p>
+      <p class="footer-sub">
+        Engenharia de Computação - UFC Sobral | Desenvolvedor Full Stack
+      </p>
+    </div>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
