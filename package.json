@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Site portfólio profissional de **Ruan Gomes Damasceno**, Desenvolvedor Full Stack e estudante de Engenharia de Computação na UFC Sobral.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruanggd123/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ruanggd123/portfolio/issues"
+  },
+  "homepage": "https://github.com/Ruanggd123/portfolio#readme",
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}

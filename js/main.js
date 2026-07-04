@@ -140,7 +140,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const successMsg = document.getElementById('form-success');
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    // Aqui você pode plugar num serviço tipo Formspree, EmailJS, etc.
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    const phone = '5588981885499';
+    const text = `Olá, me chamo ${name}.\n\n*Email:* ${email}\n*Assunto:* ${subject}\n*Mensagem:* ${message}`;
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
+    
     successMsg.classList.add('show');
     form.reset();
     setTimeout(() => successMsg.classList.remove('show'), 5000);

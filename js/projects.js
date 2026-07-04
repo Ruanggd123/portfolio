@@ -141,13 +141,29 @@ function renderProjects(repos, filter = 'all') {
     const stars = repo.stargazers_count > 0
       ? `<span class="project-stars"><i class="fas fa-star"></i> ${repo.stargazers_count}</span>`
       : '';
-    const demoLink = repo.homepage && repo.homepage.trim() !== ''
-      ? `<a href="${repo.homepage}" target="_blank" rel="noopener" class="project-link demo"><i class="fas fa-external-link-alt"></i> Ver site</a>`
+    
+    // Tratamento de URL para GitHub Pages (prioriza homepage, senão assume gh-pages se for projeto web)
+    const isWeb = repo.homepage || filter === 'web' || meta.category === 'web' || meta.category === 'academico';
+    const ghPagesUrl = `https://${GITHUB_USER}.github.io/${repo.name}/`;
+    const finalDemoUrl = meta.demo ? meta.demo : (repo.homepage && repo.homepage.trim() !== '' ? repo.homepage : (isWeb ? ghPagesUrl : ''));
+
+    const demoLink = finalDemoUrl !== ''
+      ? `<a href="${finalDemoUrl}" target="_blank" rel="noopener" class="project-link demo"><i class="fas fa-external-link-alt"></i> Ver site</a>`
       : `<span class="project-link demo disabled"><i class="fas fa-external-link-alt"></i> Sem demo</span>`;
+    
+    // Imagem do OpenGraph do GitHub
+    const imageUrl = `https://opengraph.githubassets.com/1/${GITHUB_USER}/${repo.name}`;
+    
     const updatedDate = new Date(repo.updated_at).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
 
     return `
       <article class="project-card reveal">
+        <div class="project-image-wrapper">
+          <img src="${imageUrl}" alt="${repo.name}" class="project-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="project-image-fallback" style="display:none;">
+             <i class="${langIcon}" style="font-size: 4rem; color: ${langColor}; opacity: 0.5;"></i>
+          </div>
+        </div>
         <div class="project-header">
           <div class="project-icon" style="color:${langColor}">
             <i class="${langIcon}"></i>
