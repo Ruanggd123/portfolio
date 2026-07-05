@@ -13,7 +13,7 @@ const PROJECT_META = {
   'Rifa':               { category: 'web', tag: 'Web', desc: 'Plataforma de rifas com interface responsiva e gerenciamento de números vendidos.', demo: 'https://ruanggd123.github.io/Rifa/' },
   'SEFAZ-CE':           { category: 'web', tag: 'Web', desc: 'Automação/integração relacionada à SEFAZ-CE - manipulação de notas fiscais e dados econômicos.' },
   'SGLS_TEC_WEB':       { category: 'web', tag: 'Web', desc: 'Sistema gerencial desenvolvido como trabalho da disciplina de Tecnologias Web.' },
-  'idc_website':        { category: 'web', tag: 'Web', desc: 'Website institucional desenvolvido para projeto acadêmico/profissional.' },
+  'idc_website':        { category: 'web', tag: 'Web', desc: 'Website institucional desenvolvido para projeto acadêmico/profissional.', demo: 'https://idc-despertar-da-cidadania.web.app/' },
   'Batalha-de-seguidores': { category: 'web', tag: 'Web', desc: 'Projeto web de batalha de seguidores. Compare perfis e descubra quem tem mais alcance.', demo: 'https://ruanggd123.github.io/Batalha-de-seguidores/' },
   'inspecionar':        { category: 'web', tag: 'Ferramenta', desc: 'Ferramenta para inspecionar e debugar páginas web (estilo DevTools).' },
   'overleaf_exteensao': { category: 'web', tag: 'Ferramenta', desc: 'Extensão de navegador para melhorar a experiência no Overleaf (editor LaTeX online).' },
