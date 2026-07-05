@@ -14,6 +14,8 @@ const PROJECT_META = {
   'SEFAZ-CE':           { category: 'web', tag: 'Web', desc: 'Automação/integração relacionada à SEFAZ-CE - manipulação de notas fiscais e dados econômicos.' },
   'SGLS_TEC_WEB':       { category: 'web', tag: 'Web', desc: 'Sistema gerencial desenvolvido como trabalho da disciplina de Tecnologias Web.' },
   'idc_website':        { category: 'web', tag: 'Web', desc: 'Website institucional desenvolvido para projeto acadêmico/profissional.', demo: 'https://idc-despertar-da-cidadania.web.app/' },
+  'cannon-ball-game':   { category: 'web', tag: 'Web', desc: 'Jogo interativo 3D de tiro de canhão (Cannon Ball).', demo: 'https://lincolngondin.github.io/cannon-ball-game/' },
+  'sistema-solar':      { category: 'web', tag: 'Web', desc: 'Simulação 3D do Sistema Solar feita com Three.js.', demo: 'https://lincolngondin.github.io/sistema-solar/' },
   'Batalha-de-seguidores': { category: 'web', tag: 'Web', desc: 'Projeto web de batalha de seguidores. Compare perfis e descubra quem tem mais alcance.', demo: 'https://ruanggd123.github.io/Batalha-de-seguidores/' },
   'inspecionar':        { category: 'web', tag: 'Ferramenta', desc: 'Ferramenta para inspecionar e debugar páginas web (estilo DevTools).' },
   'overleaf_exteensao': { category: 'web', tag: 'Ferramenta', desc: 'Extensão de navegador para melhorar a experiência no Overleaf (editor LaTeX online).' },
@@ -93,12 +95,27 @@ const langColors = {
   ':card_index': '#563d7c',
 };
 
+const COLLAB_REPOS = [
+  'IdcAgriFamiliar-sys/idc_website',
+  'Felype-byte/SGLS_TEC_WEB',
+  'lincolngondin/cannon-ball-game',
+  'lincolngondin/sistema-solar'
+];
+
 /* Buscar repos do GitHub via API */
 async function fetchGitHubRepos() {
   try {
     const response = await fetch(`https://api.github.com/users/${GITHUB_USER}/repos?per_page=100&sort=updated`);
     if (!response.ok) throw new Error(' falha ao buscar repositórios');
-    const repos = await response.json();
+    let repos = await response.json();
+    
+    // Buscar repositórios em que é colaborador
+    const collabPromises = COLLAB_REPOS.map(repoFullName => 
+      fetch(`https://api.github.com/repos/${repoFullName}`).then(r => r.ok ? r.json() : null)
+    );
+    const collabRepos = await Promise.all(collabPromises);
+    repos = repos.concat(collabRepos.filter(r => r !== null));
+
     return repos;
   } catch (err) {
     console.error('Erro ao buscar repos:', err);
