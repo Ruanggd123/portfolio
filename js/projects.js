@@ -8,20 +8,20 @@ const GITHUB_USER = 'Ruanggd123';
 /* Mapa manual de categorias para os repositórios mais relevantes.
    Repos não listados aqui caem em "ferramenta" por padrão. */
 const PROJECT_META = {
-  'CurriculoReact':     { category: 'web', tag: 'Web', desc: 'Currículo/portfólio interativo feito em React + TypeScript + Tailwind, com dados dinâmicos e backend em cloud functions.' },
+  'CurriculoReact':     { category: 'web', tag: 'Web', desc: 'Currículo/portfólio interativo feito em React + TypeScript + Tailwind, com dados dinâmicos e backend em cloud functions.', demo: 'https://ruanggd123.github.io/CurriculoReact/' },
   'Rifas':              { category: 'web', tag: 'Web', desc: 'Sistema completo de rifas online com gerador de números, controle de participantes e painel administrativo.' },
-  'Rifa':               { category: 'web', tag: 'Web', desc: 'Plataforma de rifas com interface responsiva e gerenciamento de números vendidos.' },
+  'Rifa':               { category: 'web', tag: 'Web', desc: 'Plataforma de rifas com interface responsiva e gerenciamento de números vendidos.', demo: 'https://ruanggd123.github.io/Rifa/' },
   'SEFAZ-CE':           { category: 'web', tag: 'Web', desc: 'Automação/integração relacionada à SEFAZ-CE - manipulação de notas fiscais e dados econômicos.' },
   'SGLS_TEC_WEB':       { category: 'web', tag: 'Web', desc: 'Sistema gerencial desenvolvido como trabalho da disciplina de Tecnologias Web.' },
   'idc_website':        { category: 'web', tag: 'Web', desc: 'Website institucional desenvolvido para projeto acadêmico/profissional.' },
-  'Batalha-de-seguidores': { category: 'web', tag: 'Web', desc: 'Projeto web de batalha de seguidores. Compare perfis e descubra quem tem mais alcance.' },
+  'Batalha-de-seguidores': { category: 'web', tag: 'Web', desc: 'Projeto web de batalha de seguidores. Compare perfis e descubra quem tem mais alcance.', demo: 'https://ruanggd123.github.io/Batalha-de-seguidores/' },
   'inspecionar':        { category: 'web', tag: 'Ferramenta', desc: 'Ferramenta para inspecionar e debugar páginas web (estilo DevTools).' },
   'overleaf_exteensao': { category: 'web', tag: 'Ferramenta', desc: 'Extensão de navegador para melhorar a experiência no Overleaf (editor LaTeX online).' },
-  'Tj':                 { category: 'web', tag: 'Web', desc: 'Projeto web - транспорte/dados sociais. Em desenvolvimento ativo.' },
+  'Tj':                 { category: 'web', tag: 'Web', desc: 'Projeto web - transporte/dados sociais. Em desenvolvimento ativo.' },
   'lovable':            { category: 'web', tag: 'Web', desc: 'Experimentos com a plataforma Lovable para geração de apps.' },
   'AutomaEmpreg':       { category: 'web', tag: 'Web', desc: 'Sistema web voltado para automação de processos de emprego/currículos.' },
   'ConectWi':           { category: 'web', tag: 'Web', desc: 'Projeto de conectividade Wi-Fi com painel de controle web.' },
-  'TecWebTarefa1':      { category: 'academico', tag: 'Acadêmico', desc: 'Primeira tarefa da disciplina de Tecnologias Web - demonstração de HTML/CSS/JS.' },
+  'TecWebTarefa1':      { category: 'academico', tag: 'Acadêmico', desc: 'Primeira tarefa da disciplina de Tecnologias Web - demonstração de HTML/CSS/JS.', demo: 'https://ruanggd123.github.io/TecWebTarefa1/' },
   'tcc':                { category: 'academico', tag: 'Acadêmico', desc: 'Trabalho de Conclusão de Curso - Engenharia de Computação pela UFC Sobral.' },
   'Trabalho_Pratico_02_Computacao_Grafica': { category: 'academico', tag: 'Acadêmico', desc: 'Trabalho prático de Computação Gráfica - renderização e manipulação de gráficos.' },
   'STR_Escalonamento':  { category: 'academico', tag: 'Acadêmico', desc: 'Implementação de algoritmos de escalonamento de processos (Sistemas Operacionais).' },
@@ -35,14 +35,13 @@ const PROJECT_META = {
   'AgendamentoListeBus':{ category: 'mobile', tag: 'Mobile', desc: 'App de agendamento de ônibus - lista de horários e reservas.' },
   'Agri-curso':         { category: 'web', tag: 'Web', desc: 'SiteCurso sobre agricultura familiar - conteúdo educacional digital.' },
   'Caixa':              { category: 'web', tag: 'Web', desc: 'Sistema de caixa - controle financeiro e fluxo de caixa.' },
-  'FormSave':           { category: 'ferramenta', tag: 'Ferramenta', desc: 'Ferramenta para salvar e gerenciar respostas de formulários.' },
   'FormSave':           { category: 'ferramenta', tag: 'Ferramenta', desc: 'Salva e exporta dados de formulários de forma simples.' },
   'formsSimples':       { category: 'ferramenta', tag: 'Ferramenta', desc: 'Gerador simples de formulários HTML.' },
-  'formSimples':        { category: 'ferramenta', tag: 'Ferramenta', desc: 'Variante do gerador de formulários - versão minimalista.' },
+  'formSimples':        { category: 'ferramenta', tag: 'Ferramenta', desc: 'Variante do gerador de formulários - versão minimalista.', demo: 'https://ruanggd123.github.io/formSimples/' },
   'MeruSeguCont':       { category: 'ferramenta', tag: 'Ferramenta', desc: 'Gerador/gerenciador de contratos - automação de documentos.' },
   'keys':               { category: 'ferramenta', tag: 'Ferramenta', desc: 'Ferramenta de gerenciamento de chaves/credenciais.' },
   'servidor':           { category: 'ferramenta', tag: 'Ferramenta', desc: 'Configurações e scripts de servidor - deploy e infra.' },
-  'Modelo_Curriculo':   { category: 'ferramenta', tag: 'Ferramenta', desc: 'Modelo base de currículo para reutilização em novos projetos.' },
+  'Modelo_Curriculo':   { category: 'ferramenta', tag: 'Ferramenta', desc: 'Modelo base de currículo para reutilização em novos projetos.', demo: 'https://ruanggd123.github.io/Modelo_Curriculo/' },
   'baseTeste':          { category: 'ferramenta', tag: 'Ferramenta', desc: 'Repositório base para testes e experimentos.' },
   'base':               { category: 'ferramenta', tag: 'Ferramenta', desc: 'Template inicial para novos projetos.' },
   'php_base':           { category: 'ferramenta', tag: 'Ferramenta', desc: 'Estrutura base PHP para iniciar projetos rapidamente.' },
@@ -142,10 +141,8 @@ function renderProjects(repos, filter = 'all') {
       ? `<span class="project-stars"><i class="fas fa-star"></i> ${repo.stargazers_count}</span>`
       : '';
     
-    // Tratamento de URL para GitHub Pages (prioriza homepage, senão assume gh-pages se for projeto web)
-    const isWeb = repo.homepage || filter === 'web' || meta.category === 'web' || meta.category === 'academico';
-    const ghPagesUrl = `https://${GITHUB_USER}.github.io/${repo.name}/`;
-    const finalDemoUrl = meta.demo ? meta.demo : (repo.homepage && repo.homepage.trim() !== '' ? repo.homepage : (isWeb ? ghPagesUrl : ''));
+    // Tratamento de URL para demo - usa explicitamente meta.demo se houver, caso contrário, usa repo.homepage se não estiver vazio
+    const finalDemoUrl = meta.demo ? meta.demo : (repo.homepage && repo.homepage.trim() !== '' ? repo.homepage : '');
 
     const demoLink = finalDemoUrl !== ''
       ? `<a href="${finalDemoUrl}" target="_blank" rel="noopener" class="project-link demo"><i class="fas fa-external-link-alt"></i> Ver site</a>`
