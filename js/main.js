@@ -59,11 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ===== Typed effect (hero) ===== */
   const phrases = [
-    'Desenvolvedor Full Stack',
-    'Engenharia de Computação',
-    'React • Node • Python',
-    'Criador de soluções web',
-    'Disponível para projetos'
+    'Engenheiro de Computação (UFC)',
+    'Pós em Ciência de Dados & ML',
+    'Desenvolvedor Full Stack & Mobile',
+    'React 19 • TypeScript • Java • Python',
+    'Disponível para Projetos & Vagas'
   ];
   const typedEl = document.getElementById('typed');
   let phraseIndex = 0;
