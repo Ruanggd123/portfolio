@@ -13,80 +13,222 @@ const PINNED_PROJECTS = [
     language: 'TypeScript',
     html_url: 'https://github.com/Ruanggd123/Certifica-AgriFamiliar-ESG',
     homepage: 'https://idc-despertar-da-cidadania.web.app/',
+    stargazers_count: 5,
+    updated_at: '2026-09-25T11:30:00Z',
+    fork: false
+  },
+  {
+    name: 'CurriculoReact',
+    description: 'Currículo digital interativo em React 19 + TypeScript + Tailwind CSS com busca e filtros dinâmicos.',
+    language: 'TypeScript',
+    html_url: 'https://github.com/Ruanggd123/CurriculoReact',
+    homepage: 'https://ruanggd123.github.io/CurriculoReact/',
+    stargazers_count: 4,
+    updated_at: '2026-09-24T18:00:00Z',
+    fork: false
+  },
+  {
+    name: 'echo-world',
+    description: 'Echo World — Jogo 3D estilo aquarela com física realista de corpos rígidos e superpoderes em Three.js e TypeScript.',
+    language: 'TypeScript',
+    html_url: 'https://github.com/Ruanggd123/echo-world',
+    homepage: 'https://ruanggd123.github.io/echo-world/',
+    stargazers_count: 4,
+    updated_at: '2026-09-22T14:00:00Z',
+    fork: false
+  },
+  {
+    name: 'meruoca',
+    description: 'Portal institucional e social com serviços públicos, projetos comunitários e informações municipais de Meruoca-CE.',
+    language: 'HTML',
+    html_url: 'https://github.com/Ruanggd123/meruoca',
+    homepage: 'https://ruanggd123.github.io/meruoca/',
     stargazers_count: 3,
-    updated_at: '2026-09-25T11:00:00Z',
+    updated_at: '2026-09-21T19:00:00Z',
     fork: false
   },
   {
     name: 'MetroOn',
-    description: 'Aplicativo mobile em React Native para passageiros do sistema VLT de Sobral-CE com horários e rotas em tempo real.',
+    description: 'Aplicativo mobile em React Native para usuários do VLT de Sobral-CE com horários e itinerários em tempo real.',
     language: 'JavaScript',
     html_url: 'https://github.com/ocJew/metroon.app',
     homepage: 'https://github.com/ocJew/metroon.app',
-    stargazers_count: 4,
-    updated_at: '2026-09-20T10:00:00Z',
+    stargazers_count: 3,
+    updated_at: '2026-09-18T10:00:00Z',
+    fork: false
+  },
+  {
+    name: 'Rifa',
+    description: 'Plataforma web de gestão de rifas e sorteios com seleção de números, reserva de cotas e comprovante via WhatsApp.',
+    language: 'HTML',
+    html_url: 'https://github.com/Ruanggd123/Rifa',
+    homepage: 'https://ruanggd123.github.io/Rifa/',
+    stargazers_count: 2,
+    updated_at: '2026-09-10T12:00:00Z',
+    fork: false
+  },
+  {
+    name: 'Batalha-de-seguidores',
+    description: 'Web app gamificado e interativo para comparação de audiência, alcance e seguidores de perfis em tempo real.',
+    language: 'HTML',
+    html_url: 'https://github.com/Ruanggd123/Batalha-de-seguidores',
+    homepage: 'https://ruanggd123.github.io/Batalha-de-seguidores/',
+    stargazers_count: 2,
+    updated_at: '2026-08-28T16:00:00Z',
     fork: false
   },
   {
     name: 'Nullbank',
-    description: 'Sistema de simulação de operações bancárias e microsserviços financeiros em Java 17, Spring Boot 3 e Apache Tomcat.',
+    description: 'Sistema bancário e microsserviços em Java 17, Spring Boot 3, Apache Tomcat e persistência relacional.',
     language: 'Java',
     html_url: 'https://github.com/Ruanggd123',
     homepage: '',
     stargazers_count: 2,
-    updated_at: '2026-08-30T10:00:00Z',
+    updated_at: '2026-08-20T10:00:00Z',
     fork: false
   },
   {
     name: 'Placa_detect',
-    description: 'Sistema de Reconhecimento Automático de Placas Veiculares (ALPR) com Redes Neurais YOLO e OpenCV em contêineres Docker.',
+    description: 'Reconhecimento Automático de Placas Veiculares (ALPR) com Redes Neurais YOLO e OpenCV em Docker.',
     language: 'Python',
     html_url: 'https://github.com/Ruanggd123',
     homepage: '',
     stargazers_count: 2,
-    updated_at: '2026-08-25T10:00:00Z',
-    fork: false
-  },
-  {
-    name: 'Sistema-Reservas-Mesas',
-    description: 'Aplicativo mobile para controle de pedidos, fluxo de atendimento e reservas gastronômicas em tempo real com Firebase.',
-    language: 'JavaScript',
-    html_url: 'https://github.com/Ruanggd123',
-    homepage: '',
-    stargazers_count: 1,
-    updated_at: '2026-08-10T10:00:00Z',
+    updated_at: '2026-08-15T10:00:00Z',
     fork: false
   }
 ];
 
-/* Metadados detalhados de cada projeto */
+/* Metadados detalhados de cada projeto com imagens reais de funcionamento e textos explicativos */
 const PROJECT_META = {
   'Certifica-ESG-AgriFamiliar': {
     category: 'web',
     tag: 'SaaS / ESG',
-    desc: 'Plataforma SaaS para assistência técnica rural e certificação ESG na agricultura familiar com mapas GIS e visualizações 3D.',
+    image: 'assets/screenshots/Certifica-ESG-AgriFamiliar.png',
+    desc: 'Plataforma SaaS para assistência técnica rural (ATER ESG) e certificação sustentável na agricultura familiar com mapas GIS e visualização 3D.',
     demo: 'https://idc-despertar-da-cidadania.web.app/',
-    conceito: 'Solução inovadora de impacto socioambiental para diagnosticar, monitorar e valorizar as práticas ambientais, sociais e de governança (ESG) de produtores rurais.',
-    utilidade: 'Gera relatórios de auditoria, laudos em PDF/Excel, emissão de QR Codes dinâmicos e rastreabilidade geoespacial dos polígonos produtivos.',
-    funcionamento: 'Arquitetura com React 19, TypeScript, Vite, Tailwind CSS, Supabase (PostgreSQL), Leaflet GIS (com demarcação de áreas), Three.js para renderização 3D e app mobile híbrido via Capacitor.'
+    conceito: 'O <strong>Certifica ESG AgriFamiliar</strong> é um ecossistema digital pioneiro desenvolvido com o Instituto Despertar da Cidadania (IDC). Foi criado para diagnosticar, monitorar e valorizar as práticas ambientais, sociais e de governança (ESG) de pequenos agricultores e cooperativas familiares.',
+    utilidade: 'Permite aos técnicos de campo mapear glebas e propriedades rurais com GPS e satélite, emitir diagnósticos técnicos em tempo real, gerar laudos e certificados em PDF com QR Code dinâmico para auditoria de órgãos reguladores e bancos de crédito.',
+    funcionamento: 'Construído em <strong>React 19</strong> com <strong>TypeScript</strong> e <strong>Tailwind CSS</strong>. Mapeamento geoespacial via <strong>Leaflet GIS</strong> para desenho vetorial de polígonos. Visualização 3D de modelos da propriedade rural com <strong>Three.js</strong> (@react-three/fiber). Backend e banco relacional no <strong>Supabase (PostgreSQL)</strong> com Row Level Security (RLS) e aplicativo mobile híbrido via <strong>Capacitor</strong>.'
   },
   'Certifica-AgriFamiliar-ESG': {
     category: 'web',
     tag: 'SaaS / ESG',
+    image: 'assets/screenshots/Certifica-AgriFamiliar-ESG.png',
     desc: 'Ecossistema completo de inovação tecnológica para ATER e conformidade ESG na agricultura familiar.',
     demo: 'https://idc-despertar-da-cidadania.web.app/',
-    conceito: 'Plataforma de inovação do Instituto Despertar da Cidadania (IDC) para capacitação e emissão de laudos de sustentabilidade.',
-    utilidade: 'Permite aos técnicos de campo coletar dados offline/online e emitir relatórios auditáveis com mapas de satélite.',
-    funcionamento: 'React 19, TypeScript, Supabase/PostgreSQL, Leaflet e visualização 3D interativa.'
+    conceito: 'Plataforma de inovação socioambiental para capacitação técnica, geoprocessamento e emissão de laudos de sustentabilidade.',
+    utilidade: 'Coleta de dados online/offline no campo com geração automatizada de relatórios em PDF/Excel.',
+    funcionamento: 'React 19, TypeScript, Supabase/PostgreSQL, Leaflet GIS, Three.js 3D e Capacitor.'
+  },
+  'CurriculoReact': { 
+    category: 'web', 
+    tag: 'React / Web',
+    image: 'assets/screenshots/CurriculoReact.png',
+    desc: 'Currículo digital interativo feito em React 19 + TypeScript + Tailwind CSS com filtros por stack e design responsivo.', 
+    demo: 'https://ruanggd123.github.io/CurriculoReact/',
+    conceito: 'Uma aplicação web interativa que redefine o modelo tradicional de currículo impresso, transformando experiências, projetos e certificações em uma experiência visual rica, filtrável e em tempo real.',
+    utilidade: 'Permite que recrutadores, gestores e clientes filtrem rapidamente as tecnologias desejadas (Frontend, Backend, Mobile, IA), visualizem métricas de projetos e façam download de dados estruturados.',
+    funcionamento: 'Desenvolvido com <strong>React 19</strong>, <strong>TypeScript</strong> e estilização moderna com <strong>Tailwind CSS</strong>. Utiliza arquitetura modular de componentes, renderização condicional eficiente e deploy contínuo via GitHub Pages.'
+  },
+  'echo-world': {
+    category: 'web',
+    tag: '3D / Game WebGL',
+    image: 'assets/screenshots/echo-world.png',
+    desc: 'Echo World — Jogo 3D no navegador com direção de arte em aquarela, física realista de corpos rígidos e superpoderes.',
+    demo: 'https://ruanggd123.github.io/echo-world/',
+    conceito: 'Experimento imersivo de computação gráfica 3D diretamente no browser, combinando estética de pintura tradicional em aquarela com engine física e movimentação livre em terceira pessoa.',
+    utilidade: 'Demonstra domínio avançado de WebGL, Three.js, shaders GLSL customizados, game loop a 60 FPS e cálculos matemáticos de vetores e matrizes para movimentação e colisões dinâmicas.',
+    funcionamento: 'Desenvolvido em <strong>TypeScript</strong> com a biblioteca <strong>Three.js</strong>. Integra motor de física de corpos rígidos para colisão com terreno e obstáculos, sistema de partículas e iluminação dinâmica em tempo real.'
+  },
+  'meruoca': {
+    category: 'web',
+    tag: 'Web Social',
+    image: 'assets/screenshots/meruoca.png',
+    desc: 'Portal institucional e social com serviços públicos, projetos comunitários e informações municipais de Meruoca-CE.',
+    demo: 'https://ruanggd123.github.io/meruoca/',
+    conceito: 'Plataforma web de utilidade pública focada em aproximar a população local de iniciativas culturais, projetos de capacitação digital (como o projeto "Entrando no Jogo") e serviços essenciais.',
+    utilidade: 'Centraliza informações municipais, horários de atendimento, notícias e links de utilidade pública em uma interface intuitiva acessível a qualquer cidadão.',
+    funcionamento: 'Construído com <strong>HTML5 semântico</strong>, <strong>CSS3 moderno</strong> (Flexbox e Grid) e <strong>JavaScript vanilla</strong>. Layout ultra-otimizado para dispositivos móveis com baixo consumo de dados e velocidade de carregamento instantânea.'
+  },
+  'idc_website': {
+    category: 'web',
+    tag: 'Institucional',
+    image: 'assets/screenshots/idc_website.png',
+    desc: 'Website institucional do Instituto Despertar da Cidadania (IDC), apresentando ações e projetos no campo.',
+    demo: 'https://idc-despertar-da-cidadania.web.app/',
+    conceito: 'Portal oficial de divulgação das ações socioambientais, parcerias governamentais e assistência técnica rural.',
+    utilidade: 'Canal transparente para prestação de contas, apresentação de projetos e captação de novas parcerias no semiárido cearense.',
+    funcionamento: 'Single Page Application responsiva hospedada com SSL automático via Firebase Hosting.'
+  },
+  'Rifa': { 
+    category: 'web', 
+    tag: 'Sistema Web',
+    image: 'assets/screenshots/Rifa.png',
+    desc: 'Plataforma web de gestão de rifas e sorteios com seleção de números, reserva de cotas e envio de comprovante via WhatsApp.', 
+    demo: 'https://ruanggd123.github.io/Rifa/',
+    conceito: 'Sistema completo para digitalizar e automatizar a venda de rifas e campanhas beneficentes, eliminando cartelas de papel e falhas manuais.',
+    utilidade: 'Os compradores escolhem números livres visualmente, realizam a reserva e enviam o comprovante diretamente para o organizador pelo WhatsApp com um clique.',
+    funcionamento: 'JavaScript ES6+, manipulação reativa do DOM, controle de status das cotas (Livre, Reservado, Pago) e integração direta com a API do WhatsApp.'
+  },
+  'Batalha-de-seguidores': { 
+    category: 'web', 
+    tag: 'Web App',
+    image: 'assets/screenshots/Batalha-de-seguidores.png',
+    desc: 'Aplicação gamificada que compara métricas de alcance, audiência e seguidores de perfis com placar em tempo real.', 
+    demo: 'https://ruanggd123.github.io/Batalha-de-seguidores/',
+    conceito: 'Jogo interativo que estimula a disputa saudável de engajamento entre criadores e marcas.',
+    utilidade: 'Ferramenta descontraída para ativação de público em redes sociais e análise comparativa de crescimento.',
+    funcionamento: 'JavaScript, transições dinâmicas de CSS3, cálculo proporcional de barras de energia e atualização instantânea de pontuações.'
+  },
+  'Modelo_Curriculo': { 
+    category: 'ferramenta', 
+    tag: 'Template Web',
+    image: 'assets/screenshots/Modelo_Curriculo.png',
+    desc: 'Modelo base de currículo profissional para desenvolvedores com design clean e suporte perfeito a impressão A4.', 
+    demo: 'https://ruanggd123.github.io/Modelo_Curriculo/',
+    conceito: 'Layout padronizado para quem precisa de um currículo online rápido, elegante e sem excesso de dependências.',
+    utilidade: 'Template open source pronto para ser clonado e preenchido por outros estudantes e desenvolvedores.',
+    funcionamento: 'HTML semântico com folhas de estilo CSS dedicadas a impressão (@media print) para conversão perfeita em PDF.'
+  },
+  'formSimples': { 
+    category: 'ferramenta', 
+    tag: 'Ferramenta',
+    image: 'assets/screenshots/formSimples.png',
+    desc: 'Gerador minimalista de formulários com validações de dados no cliente e formatação automática de campos.', 
+    demo: 'https://ruanggd123.github.io/formSimples/',
+    conceito: 'Utilitário leve para validação rápida de entradas de formulário e testes de experiência do usuário.',
+    utilidade: 'Permite capturar inscrições de forma direta sem fricção.',
+    funcionamento: 'JavaScript vanilla com validações Regex em tempo real.'
+  },
+  'TecWebTarefa1': { 
+    category: 'academico', 
+    tag: 'Acadêmico UFC',
+    image: 'assets/screenshots/TecWebTarefa1.png',
+    desc: 'Projeto acadêmico da UFC Sobral demonstrando estruturação de layout, semântica W3C e CSS responsivo.', 
+    demo: 'https://ruanggd123.github.io/TecWebTarefa1/',
+    conceito: 'Atividade prática da disciplina de Tecnologias Web da Universidade Federal do Ceará.',
+    utilidade: 'Demonstra domínio dos padrões web e boas práticas de estruturação de código limpo.',
+    funcionamento: 'HTML5 semântico com CSS moderno e navegação estruturada.'
+  },
+  'portfolio': {
+    category: 'web',
+    tag: 'Web / Portfólio',
+    image: 'assets/screenshots/portfolio.png',
+    desc: 'Site portfólio oficial desenvolvido com tema dark, glassmorphism e integração dinâmica com a API do GitHub.',
+    demo: 'https://ruanggd123.github.io/portfolio/',
+    conceito: 'Vitrine digital completa para demonstrar competências de engenharia de software e serviços.',
+    utilidade: 'Permite a potenciais clientes e recrutadores visualizar projetos, detalhes e solicitar orçamentos.',
+    funcionamento: 'HTML5, CSS3 com variáveis e glassmorphism, JavaScript ES6+ e consumo da API pública do GitHub.'
   },
   'MetroOn': {
     category: 'mobile',
     tag: 'Mobile / VLT',
-    desc: 'Aplicativo mobile voltado para passageiros do VLT de Sobral-CE, com itinerários, horários e rotas em tempo real.',
+    desc: 'Aplicativo mobile voltado para usuários do VLT de Sobral-CE, com itinerários, rotas e horários em tempo real.',
     demo: 'https://github.com/ocJew/metroon.app',
-    conceito: 'Ferramenta de mobilidade urbana para facilitar o dia a dia dos usuários do metrô leve sobre trilhos de Sobral.',
-    utilidade: 'Otimiza o tempo de deslocamento do passageiro ao fornecer estimativas precisas de chegada do próximo trem.',
-    funcionamento: 'Desenvolvido em React Native com consumo de rotas REST, componentes mobile performáticos e interface intuitiva.'
+    conceito: 'Solução de mobilidade urbana em tempo real para os usuários do transporte público sobre trilhos de Sobral.',
+    utilidade: 'Permite aos passageiros consultar itinerários e estações, reduzindo o tempo de espera nas paradas.',
+    funcionamento: 'Desenvolvido em <strong>React Native</strong> com consumo de rotas REST, componentes mobile performáticos e interface intuitiva.'
   },
   'metroon': {
     category: 'mobile',
@@ -102,59 +244,24 @@ const PROJECT_META = {
     tag: 'Java / Backend',
     desc: 'Simulação de operações bancárias e microsserviços financeiros em Java 17, Spring Boot 3 e Apache Tomcat.',
     conceito: 'Aplicação bancária robusta focada em regras de negócio financeiras, consistência de dados e segurança.',
-    utilidade: 'Simula abertura de contas, transferências, autenticação segura e conciliação de transações.',
-    funcionamento: 'Construído em Java 17 com Spring Boot 3, Spring Data JPA, Spring Security, Apache Tomcat e persistência em PostgreSQL.'
-  },
-  'Sistema-Reservas-Mesas': {
-    category: 'mobile',
-    tag: 'Mobile / Food',
-    desc: 'Aplicativo mobile para controle de mesas, pedidos e reservas gastronômicas em tempo real.',
-    conceito: 'Gestão operacional de restaurantes visando eliminar filas e atrasos nos pedidos.',
-    utilidade: 'Garçons e clientes têm visão imediata do status de cada mesa e pedido.',
-    funcionamento: 'React Native integrado com Firebase Realtime Database para sincronização de dados instantânea.'
+    utilidade: 'Simula abertura de contas, transferências com controle de saldo, autenticação segura e conciliação de transações.',
+    funcionamento: 'Construído em <strong>Java 17</strong> com <strong>Spring Boot 3</strong>, <strong>Spring Data JPA</strong>, <strong>Spring Security</strong>, Apache Tomcat e persistência relacional em PostgreSQL.'
   },
   'Placa_detect': {
     category: 'ferramenta',
     tag: 'IA / Visão Computacional',
     desc: 'Reconhecimento Automático de Placas Veiculares (ALPR) com Redes Neurais YOLO e OpenCV em Docker.',
-    conceito: 'Pipeline de visão computacional voltado para identificação, segmentação e OCR de placas automotivas.',
-    utilidade: 'Pode ser aplicado em estacionamentos inteligentes, pedágios, segurança patrimonial e fiscalização de tráfego.',
-    funcionamento: 'Python com pesos de redes neurais YOLO, biblioteca OpenCV para filtros morfológicos e Docker para inferência escalável.'
+    conceito: 'Pipeline de visão computacional para detecção, enquadramento morfológico e extração de caracteres de placas veiculares.',
+    utilidade: 'Aplicações em portarias inteligentes, cancelas de estacionamentos, controle de acesso e monitoramento de frotas.',
+    funcionamento: 'Desenvolvido em <strong>Python</strong> utilizando pesos pré-treinados de redes neurais <strong>YOLO</strong>, processamento digital de imagem com <strong>OpenCV</strong> e conteinerização em <strong>Docker</strong>.'
   },
-  'echo-world': {
-    category: 'web',
-    tag: '3D / Game',
-    desc: 'Echo World — Jogo 3D estilo aquarela com física realista e superpoderes em Three.js e TypeScript.',
-    demo: 'https://ruanggd123.github.io/echo-world/',
-    conceito: 'Experiência lúdica 3D no navegador com direção de arte baseada em aquarela e dinâmica de física interativa.',
-    utilidade: 'Demonstração prática de desenvolvimento de shaders, computação gráfica, WebGL e game loops fluidos.',
-    funcionamento: 'TypeScript puro com Three.js, biblioteca de física 3D e renderização acelerada por GPU.'
-  },
-  'meruoca': {
-    category: 'web',
-    tag: 'Web / Social',
-    desc: 'Plataforma web com soluções e informações sociais para a comunidade do município de Meruoca-CE.',
-    demo: 'https://ruanggd123.github.io/meruoca/',
-    conceito: 'Portal digital para conectar cidadãos a projetos locais, cultura e serviços públicos.',
-    utilidade: 'Centraliza dados de projetos sociais, iniciativas de capacitação e notícias municipais.',
-    funcionamento: 'HTML5 semântico, CSS moderno e JavaScript vanilla com navegação responsiva e carregamento rápido.'
-  },
-  'CurriculoReact': { 
-    category: 'web', 
-    tag: 'Web / React', 
-    desc: 'Currículo digital interativo feito em React 19 + TypeScript + Tailwind CSS com dados dinâmicos.', 
-    demo: 'https://ruanggd123.github.io/CurriculoReact/',
-    conceito: 'Currículo interativo projetado para destacar habilidades técnicas com design moderno e navegação ágil.',
-    utilidade: 'Apresenta projetos, stacks e experiências com filtros interativos para recrutadores e empresas.',
-    funcionamento: 'React, TypeScript e Tailwind CSS com renderização modular de dados dinâmicos.'
-  },
-  'english-immersion-os': {
-    category: 'ferramenta',
-    tag: 'Ferramenta / IA',
-    desc: 'Ambiente interativo de imersão e prática de inglês com IA para conversação e vocabulário técnico.',
-    conceito: 'Plataforma para acelerar a fluência na língua inglesa combinando feedback imediato e escuta ativa.',
-    utilidade: 'Auxilia desenvolvedores a aprimorarem inglês técnico para entrevistas internacionais.',
-    funcionamento: 'Desenvolvido em TypeScript com rotinas interativas e integração de prompts linguísticos.'
+  'UniMove': {
+    category: 'mobile',
+    tag: 'Mobile / UFC',
+    desc: 'Plataforma de integração e mobilidade acadêmica para a comunidade universitária da UFC Sobral.',
+    conceito: 'Solução para facilitação de fluxos internos de transporte e integração para a comunidade discente.',
+    utilidade: 'Conecta alunos que fazem rotas semelhantes, barateando custos e integrando o campus.',
+    funcionamento: 'React e APIs REST com interface focada em facilidade de uso.'
   },
   'VendaSaas': {
     category: 'web',
@@ -181,31 +288,17 @@ const PROJECT_META = {
     utilidade: 'Apresenta de forma clara as tecnologias, links sociais e download direto do currículo em PDF.',
     funcionamento: 'Markdown avançado com Shields.io badges, APIs dinâmicas do GitHub e assets em nuvem.'
   },
-  'portfolio': {
-    category: 'web',
-    tag: 'Web / Portfólio',
-    desc: 'Site portfólio profissional moderno, tema dark, responsivo com integração automática à API do GitHub.',
-    demo: 'https://ruanggd123.github.io/portfolio/',
-    conceito: 'Vitrine digital completa para demonstrar competências de engenharia de software e serviços.',
-    utilidade: 'Permite a potenciais clientes e recrutadores visualizar projetos, detalhes e solicitar orçamentos.',
-    funcionamento: 'HTML5, CSS3 com variáveis e glassmorphism, JavaScript ES6+ e consumo da API pública do GitHub.'
-  },
-  'UniMove': {
-    category: 'mobile',
-    tag: 'Mobile / UFC',
-    desc: 'Plataforma de integração e mobilidade acadêmica para a comunidade universitária da UFC Sobral.',
-    conceito: 'Solução de caronas e transporte para estudantes universitários.',
-    utilidade: 'Conecta alunos que fazem rotas semelhantes, barateando custos e integrando o campus.',
-    funcionamento: 'React e APIs REST com interface focada em facilidade de uso.'
+  'english-immersion-os': {
+    category: 'ferramenta',
+    tag: 'Ferramenta / IA',
+    desc: 'Ambiente interativo de imersão e prática de inglês com IA para conversação e vocabulário técnico.',
+    conceito: 'Plataforma para acelerar a fluência na língua inglesa combinando feedback imediato e escuta ativa.',
+    utilidade: 'Auxilia desenvolvedores a aprimorarem inglês técnico para entrevistas internacionais.',
+    funcionamento: 'Desenvolvido em TypeScript com rotinas interativas e integração de prompts linguísticos.'
   },
   'Rifas': { category: 'web', tag: 'Web', desc: 'Sistema completo de rifas online com gerador de números, controle de participantes e painel administrativo.' },
-  'Rifa': { category: 'web', tag: 'Web', desc: 'Plataforma de rifas com interface responsiva e gerenciamento de números vendidos.', demo: 'https://ruanggd123.github.io/Rifa/' },
-  'SEFAZ-CE': { category: 'web', tag: 'Web', desc: 'Automação e integração relacionada à SEFAZ-CE para dados fiscais.' },
+  'SEFAZ-CE': { category: 'web', tag: 'Web', desc: 'Automação e integração relacionada à SEFAZ-CE para processamento de dados fiscais.' },
   'SGLS_TEC_WEB': { category: 'web', tag: 'Web', desc: 'Sistema gerencial desenvolvido para disciplina de Tecnologias Web.' },
-  'idc_website': { category: 'web', tag: 'Web', desc: 'Website institucional desenvolvido para o Instituto Despertar da Cidadania.', demo: 'https://idc-despertar-da-cidadania.web.app/' },
-  'cannon-ball-game': { category: 'web', tag: '3D / Game', desc: 'Jogo interativo 3D de tiro de canhão construído com Three.js.', demo: 'https://lincolngondin.github.io/cannon-ball-game/' },
-  'sistema-solar': { category: 'web', tag: '3D', desc: 'Simulação 3D interativa do Sistema Solar feita com Three.js.', demo: 'https://lincolngondin.github.io/sistema-solar/' },
-  'Batalha-de-seguidores': { category: 'web', tag: 'Web', desc: 'Projeto web para comparação de seguidores e alcance de perfis.', demo: 'https://ruanggd123.github.io/Batalha-de-seguidores/' },
   'tcc': { category: 'academico', tag: 'Acadêmico / TCC', desc: 'TCC em Engenharia de Computação — Algoritmos de Agregação Robusta em Aprendizado Federado (UFC Sobral).' },
   'Trabalho_Pratico_02_Computacao_Grafica': { category: 'academico', tag: 'Computação Gráfica', desc: 'Trabalho prático de Computação Gráfica com renderização e transformações 2D/3D.' },
   'STR_Escalonamento': { category: 'academico', tag: 'Sistemas Operacionais', desc: 'Implementação de algoritmos de escalonamento em tempo real (Sistemas Operacionais).' },
@@ -256,9 +349,7 @@ const langColors = {
 
 const COLLAB_REPOS = [
   'IdcAgriFamiliar-sys/idc_website',
-  'Felype-byte/SGLS_TEC_WEB',
-  'lincolngondin/cannon-ball-game',
-  'lincolngondin/sistema-solar'
+  'Felype-byte/SGLS_TEC_WEB'
 ];
 
 /* Buscar repos do GitHub via API */
@@ -277,7 +368,7 @@ async function fetchGitHubRepos() {
     const collabRepos = await Promise.all(collabPromises);
     repos = repos.concat(collabRepos.filter(r => r !== null));
 
-    // Integrar os projetos fixados e emblemáticos
+    // Garantir os projetos fixados e emblemáticos
     PINNED_PROJECTS.forEach(pinned => {
       const exists = repos.find(r => r.name.toLowerCase() === pinned.name.toLowerCase());
       if (!exists) {
@@ -294,13 +385,16 @@ async function fetchGitHubRepos() {
 
 /* Filtrar e ordenar repositórios relevantes */
 function filterRelevantRepos(repos) {
-  // Ordenar colocando repositórios com meta ou mais recentes no topo
   return repos
     .filter(r => r.name !== 'baseTeste' && r.name !== 'base' && r.name !== 'php_base')
     .sort((a, b) => {
-      const hasMetaA = PROJECT_META[a.name] ? 1 : 0;
-      const hasMetaB = PROJECT_META[b.name] ? 1 : 0;
-      if (hasMetaA !== hasMetaB) return hasMetaB - hasMetaA;
+      // Prioridade máxima para projetos que possuem demonstração ao vivo ou estão no PINNED_PROJECTS
+      const metaA = PROJECT_META[a.name];
+      const metaB = PROJECT_META[b.name];
+      const hasDemoA = (metaA && metaA.demo) ? 2 : (metaA ? 1 : 0);
+      const hasDemoB = (metaB && metaB.demo) ? 2 : (metaB ? 1 : 0);
+
+      if (hasDemoA !== hasDemoB) return hasDemoB - hasDemoA;
       return new Date(b.updated_at) - new Date(a.updated_at);
     });
 }
@@ -325,36 +419,51 @@ function renderProjects(repos, filter = 'all') {
   }
 
   grid.innerHTML = filtered.map(repo => {
-    const meta = PROJECT_META[repo.name] || { category: 'ferramenta', tag: 'Projeto', desc: repo.description || 'Repositório no GitHub.' };
+    const meta = PROJECT_META[repo.name] || { 
+      category: 'ferramenta', 
+      tag: 'Projeto', 
+      desc: repo.description || 'Repositório no GitHub.' 
+    };
+
     const langIcon = langIcons[repo.language] || 'fas fa-code';
     const langColor = langColors[repo.language] || '#8b5cf6';
     const stars = repo.stargazers_count > 0
       ? `<span class="project-stars"><i class="fas fa-star"></i> ${repo.stargazers_count}</span>`
       : '';
     
-    // Tratamento de URL para demo
+    // Tratamento de URL para demo / site funcionando
     const finalDemoUrl = meta.demo ? meta.demo : (repo.homepage && repo.homepage.trim() !== '' ? repo.homepage : '');
 
-    const demoLink = finalDemoUrl !== ''
-      ? `<a href="${finalDemoUrl}" target="_blank" rel="noopener" class="project-link demo"><i class="fas fa-external-link-alt"></i> Ver site</a>`
-      : `<span class="project-link demo disabled"><i class="fas fa-external-link-alt"></i> Sem demo</span>`;
-    
-    // Imagem do OpenGraph do GitHub
-    const imageUrl = `https://opengraph.githubassets.com/1/${GITHUB_USER}/${repo.name}`;
+    // Imagem do projeto (se houver screenshot local capturado, usa ele prioritariamente)
+    const projectImg = meta.image || `assets/screenshots/${repo.name}.png`;
+    const fallbackOpenGraph = `https://opengraph.githubassets.com/1/${GITHUB_USER}/${repo.name}`;
+
+    // Tag e status online
+    const onlineBadge = finalDemoUrl !== ''
+      ? `<span class="project-online-badge"><span class="dot green"></span> Online</span>`
+      : '';
+
+    const actionButton = finalDemoUrl !== ''
+      ? `<a href="${finalDemoUrl}" target="_blank" rel="noopener" class="project-link demo active" title="Acessar projeto em funcionamento"><i class="fas fa-play-circle"></i> Ver Funcionando</a>`
+      : `<a href="${repo.html_url}" target="_blank" rel="noopener" class="project-link github"><i class="fab fa-github"></i> Código</a>`;
 
     return `
       <article class="project-card reveal">
         <div class="project-image-wrapper">
-          <img src="${imageUrl}" alt="${repo.name}" class="project-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-          <div class="project-image-fallback" style="display:none;">
-             <i class="${langIcon}" style="font-size: 4rem; color: ${langColor}; opacity: 0.5;"></i>
-          </div>
+          <img src="${projectImg}" 
+               alt="${repo.name}" 
+               class="project-image" 
+               loading="lazy"
+               onerror="this.onerror=null; this.src='${fallbackOpenGraph}';" />
         </div>
         <div class="project-header">
           <div class="project-icon" style="color:${langColor}">
             <i class="${langIcon}"></i>
           </div>
-          <span class="project-tag-label">${meta.tag}</span>
+          <div style="display: flex; gap: 8px; align-items: center;">
+            ${onlineBadge}
+            <span class="project-tag-label">${meta.tag}</span>
+          </div>
         </div>
         <h3 class="project-name">${repo.name}</h3>
         <p class="project-desc">${meta.desc}</p>
@@ -363,13 +472,17 @@ function renderProjects(repos, filter = 'all') {
           ${stars}
         </div>
         <div class="project-links">
-          <button class="project-link details-btn" onclick="openProjectModal(this)" data-repo='${JSON.stringify(repo).replace(/'/g, "&apos;")}' data-meta='${JSON.stringify(meta).replace(/'/g, "&apos;")}' data-lang-icon="${langIcon}" data-lang-color="${langColor}" data-image-url="${imageUrl}" data-demo="${finalDemoUrl}">
+          <button class="project-link details-btn" 
+                  onclick="openProjectModal(this)" 
+                  data-repo='${JSON.stringify(repo).replace(/'/g, "&apos;")}' 
+                  data-meta='${JSON.stringify(meta).replace(/'/g, "&apos;")}' 
+                  data-lang-icon="${langIcon}" 
+                  data-lang-color="${langColor}" 
+                  data-image-url="${projectImg}" 
+                  data-demo="${finalDemoUrl}">
             <i class="fas fa-info-circle"></i> Detalhes
           </button>
-          <a href="${repo.html_url}" target="_blank" rel="noopener" class="project-link github">
-            <i class="fab fa-github"></i> Código
-          </a>
-          ${demoLink}
+          ${actionButton}
         </div>
       </article>
     `;
@@ -440,11 +553,16 @@ window.openProjectModal = function(btn) {
   iconEl.className = langIcon;
   iconEl.style.color = langColor;
 
-  document.getElementById('modal-image').src = imageUrl;
+  const modalImg = document.getElementById('modal-image');
+  modalImg.src = imageUrl;
+  modalImg.onerror = function() {
+    this.onerror = null;
+    this.src = `https://opengraph.githubassets.com/1/${GITHUB_USER}/${repo.name}`;
+  };
 
   document.getElementById('modal-concept').innerHTML = meta.conceito || meta.desc || 'Conceito não detalhado ainda.';
-  document.getElementById('modal-utility').innerHTML = meta.utilidade || 'Projeto com foco em resolução prática de problemas, integrando soluções modernas de software.';
-  document.getElementById('modal-works').innerHTML = meta.funcionamento || `Desenvolvido majoritariamente em ${repo.language || 'várias linguagens'}, explorando conceitos avançados de engenharia de software e arquitetura.`;
+  document.getElementById('modal-utility').innerHTML = meta.utilidade || 'Projeto com foco em resolução prática de problemas e engenharia de software.';
+  document.getElementById('modal-works').innerHTML = meta.funcionamento || `Desenvolvido majoritariamente em ${repo.language || 'várias linguagens'}, aplicando arquiteturas modernas e escaláveis.`;
 
   // Techs
   const techsHtml = repo.language ? `<span class="lang-badge" style="border-color:${langColor}">${repo.language}</span>` : '<span class="lang-badge">Multi-linguagem</span>';
@@ -453,7 +571,7 @@ window.openProjectModal = function(btn) {
   // Actions
   let actionsHtml = `<a href="${repo.html_url}" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-github"></i> Ver Código</a>`;
   if (demoUrl) {
-    actionsHtml += `<a href="${demoUrl}" target="_blank" rel="noopener" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar Site</a>`;
+    actionsHtml += `<a href="${demoUrl}" target="_blank" rel="noopener" class="btn btn-primary"><i class="fas fa-play-circle"></i> Acessar Projeto Online</a>`;
   }
   document.getElementById('modal-actions').innerHTML = actionsHtml;
 
