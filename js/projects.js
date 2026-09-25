@@ -18,6 +18,36 @@ const PINNED_PROJECTS = [
     fork: false
   },
   {
+    name: 'Nullbank',
+    description: 'Sistema bancário e microsserviços em Java 17, Spring Boot 3, Apache Tomcat e persistência relacional.',
+    language: 'Java',
+    html_url: 'https://github.com/Ruanggd123',
+    homepage: '',
+    stargazers_count: 2,
+    updated_at: '2026-09-25T10:00:00Z',
+    fork: false
+  },
+  {
+    name: 'MetroOn',
+    description: 'Aplicativo mobile em React Native para usuários do VLT de Sobral-CE com horários e itinerários em tempo real.',
+    language: 'JavaScript',
+    html_url: 'https://github.com/ocJew/metroon.app',
+    homepage: 'https://github.com/ocJew/metroon.app',
+    stargazers_count: 3,
+    updated_at: '2026-09-25T09:00:00Z',
+    fork: false
+  },
+  {
+    name: 'Placa_detect',
+    description: 'Reconhecimento Automático de Placas Veiculares (ALPR) com Redes Neurais YOLO e OpenCV em Docker.',
+    language: 'Python',
+    html_url: 'https://github.com/Ruanggd123',
+    homepage: '',
+    stargazers_count: 2,
+    updated_at: '2026-09-25T08:00:00Z',
+    fork: false
+  },
+  {
     name: 'concurso-meruoca',
     description: 'Plataforma de estudos, cronograma e simulados com gerador de questões para o Concurso da Câmara de Meruoca-CE (Técnico Legislativo).',
     language: 'HTML',
@@ -58,16 +88,6 @@ const PINNED_PROJECTS = [
     fork: false
   },
   {
-    name: 'MetroOn',
-    description: 'Aplicativo mobile em React Native para usuários do VLT de Sobral-CE com horários e itinerários em tempo real.',
-    language: 'JavaScript',
-    html_url: 'https://github.com/ocJew/metroon.app',
-    homepage: 'https://github.com/ocJew/metroon.app',
-    stargazers_count: 3,
-    updated_at: '2026-09-18T10:00:00Z',
-    fork: false
-  },
-  {
     name: 'Rifa',
     description: 'Plataforma web de gestão de rifas e sorteios com seleção de números, reserva de cotas e comprovante via WhatsApp.',
     language: 'HTML',
@@ -86,31 +106,66 @@ const PINNED_PROJECTS = [
     stargazers_count: 2,
     updated_at: '2026-08-28T16:00:00Z',
     fork: false
-  },
-  {
-    name: 'Nullbank',
-    description: 'Sistema bancário e microsserviços em Java 17, Spring Boot 3, Apache Tomcat e persistência relacional.',
-    language: 'Java',
-    html_url: 'https://github.com/Ruanggd123',
-    homepage: '',
-    stargazers_count: 2,
-    updated_at: '2026-08-20T10:00:00Z',
-    fork: false
-  },
-  {
-    name: 'Placa_detect',
-    description: 'Reconhecimento Automático de Placas Veiculares (ALPR) com Redes Neurais YOLO e OpenCV em Docker.',
-    language: 'Python',
-    html_url: 'https://github.com/Ruanggd123',
-    homepage: '',
-    stargazers_count: 2,
-    updated_at: '2026-08-15T10:00:00Z',
-    fork: false
   }
 ];
 
 /* Metadados detalhados de cada projeto com imagens reais de funcionamento e textos explicativos */
 const PROJECT_META = {
+  'Certifica-ESG-AgriFamiliar': {
+    category: 'web',
+    tag: 'SaaS / ESG',
+    image: 'assets/screenshots/Certifica-ESG-AgriFamiliar.png',
+    desc: 'Plataforma SaaS para assistência técnica rural (ATER ESG) e certificação sustentável na agricultura familiar com mapas GIS e visualização 3D.',
+    demo: 'https://idc-despertar-da-cidadania.web.app/',
+    conceito: 'O <strong>Certifica ESG AgriFamiliar</strong> é um ecossistema digital pioneiro desenvolvido com o Instituto Despertar da Cidadania (IDC). Foi criado para diagnosticar, monitorar e valorizar as práticas ambientais, sociais e de governança (ESG) de pequenos agricultores e cooperativas familiares.',
+    utilidade: 'Permite aos técnicos de campo mapear glebas e propriedades rurais com GPS e satélite, emitir diagnósticos técnicos em tempo real, gerar laudos e certificados em PDF com QR Code dinâmico para auditoria de órgãos reguladores e bancos de crédito.',
+    funcionamento: 'Construído em <strong>React 19</strong> com <strong>TypeScript</strong> e <strong>Tailwind CSS</strong>. Mapeamento geoespacial via <strong>Leaflet GIS</strong> para desenho vetorial de polígonos. Visualização 3D de modelos da propriedade rural com <strong>Three.js</strong> (@react-three/fiber). Backend e banco relacional no <strong>Supabase (PostgreSQL)</strong> com Row Level Security (RLS) e aplicativo mobile híbrido via <strong>Capacitor</strong>.'
+  },
+  'Certifica-AgriFamiliar-ESG': {
+    category: 'web',
+    tag: 'SaaS / ESG',
+    image: 'assets/screenshots/Certifica-AgriFamiliar-ESG.png',
+    desc: 'Ecossistema completo de inovação tecnológica para ATER e conformidade ESG na agricultura familiar.',
+    demo: 'https://idc-despertar-da-cidadania.web.app/',
+    conceito: 'Plataforma de inovação socioambiental para capacitação técnica, geoprocessamento e emissão de laudos de sustentabilidade.',
+    utilidade: 'Coleta de dados online/offline no campo com geração automatizada de relatórios em PDF/Excel.',
+    funcionamento: 'React 19, TypeScript, Supabase/PostgreSQL, Leaflet GIS, Three.js 3D e Capacitor.'
+  },
+  'Nullbank': {
+    category: 'academico',
+    tag: 'Java / Backend',
+    image: 'assets/screenshots/Nullbank.png',
+    desc: 'Simulação de operações bancárias e microsserviços financeiros em Java 17, Spring Boot 3 e Apache Tomcat.',
+    conceito: 'Aplicação bancária robusta focada em regras de negócio financeiras, consistência de dados e segurança.',
+    utilidade: 'Simula abertura de contas, transferências com controle de saldo, autenticação segura e conciliação de transações.',
+    funcionamento: 'Construído em <strong>Java 17</strong> com <strong>Spring Boot 3</strong>, <strong>Spring Data JPA</strong>, <strong>Spring Security</strong>, Apache Tomcat e persistência relacional em PostgreSQL.'
+  },
+  'MetroOn': {
+    category: 'mobile',
+    tag: 'Mobile / VLT',
+    image: 'assets/screenshots/MetroOn.png',
+    desc: 'Aplicativo mobile voltado para usuários do VLT de Sobral-CE, com itinerários, rotas e horários em tempo real.',
+    demo: 'https://github.com/ocJew/metroon.app',
+    conceito: 'Solução de mobilidade urbana em tempo real para os usuários do transporte público sobre trilhos de Sobral.',
+    utilidade: 'Permite aos passageiros consultar itinerários e estações, reduzindo o tempo de espera nas paradas.',
+    funcionamento: 'Desenvolvido em <strong>React Native</strong> com consumo de rotas REST, componentes mobile performáticos e interface intuitiva.'
+  },
+  'metroon': {
+    category: 'mobile',
+    tag: 'Mobile / VLT',
+    image: 'assets/screenshots/MetroOn.png',
+    desc: 'Aplicativo móvel para acompanhamento do VLT de Sobral-CE em React Native.',
+    demo: 'https://github.com/ocJew/metroon.app'
+  },
+  'Placa_detect': {
+    category: 'ferramenta',
+    tag: 'IA / Visão Computacional',
+    image: 'assets/screenshots/Placa_detect.png',
+    desc: 'Reconhecimento Automático de Placas Veiculares (ALPR) com Redes Neurais YOLO e OpenCV em Docker.',
+    conceito: 'Pipeline de visão computacional para detecção, enquadramento morfológico e extração de caracteres de placas veiculares.',
+    utilidade: 'Aplicações em portarias inteligentes, cancelas de estacionamentos, controle de acesso e monitoramento de frotas.',
+    funcionamento: 'Desenvolvido em <strong>Python</strong> utilizando pesos pré-treinados de redes neurais <strong>YOLO</strong>, processamento digital de imagem com <strong>OpenCV</strong> e conteinerização em <strong>Docker</strong>.'
+  },
   'concurso-meruoca': {
     category: 'web',
     tag: 'Concurso / Meruoca',
@@ -131,6 +186,7 @@ const PROJECT_META = {
   'concurso-tj-ce': {
     category: 'web',
     tag: 'Concurso / TJ-CE',
+    image: 'assets/screenshots/concurso-tj-ce.png',
     desc: 'Plataforma de estudos com edital verticalizado, cronograma e materiais organizados para o Concurso do TJ-CE (Tribunal de Justiça do Ceará).',
     conceito: 'Solução de organização e acompanhamento de metas para o edital do Tribunal de Justiça do Estado do Ceará.',
     utilidade: 'Auxilia concurseiros a monitorar o avanço de cada tópico do edital com cronograma diário estruturado.',
@@ -139,30 +195,11 @@ const PROJECT_META = {
   'tcc-aprendizado-federado': {
     category: 'academico',
     tag: 'Acadêmico / TCC',
+    image: 'assets/screenshots/tcc-aprendizado-federado.png',
     desc: 'TCC em Engenharia de Computação (UFC Sobral): Avaliação de Algoritmos de Agregação Robusta em Aprendizado Federado sob Cenários Adversos.',
     conceito: 'Pesquisa científica acadêmica avaliando técnicas de defesa e robustez contra ataques bizantinos e dados envenenados em Aprendizado Federado (Federated Learning).',
     utilidade: 'Garante que modelos de Inteligência Artificial distribuídos continuem convergindo mesmo quando nós participantes enviam dados corrompidos ou maliciosos.',
     funcionamento: 'Implementado em Python com PyTorch / Flower, simulando múltiplos clientes heterogêneos e aplicando regras de agregação robustas (Krum, Trimmed Mean, Median).'
-  },
-  'Certifica-ESG-AgriFamiliar': {
-    category: 'web',
-    tag: 'SaaS / ESG',
-    image: 'assets/screenshots/Certifica-ESG-AgriFamiliar.png',
-    desc: 'Plataforma SaaS para assistência técnica rural (ATER ESG) e certificação sustentável na agricultura familiar com mapas GIS e visualização 3D.',
-    demo: 'https://idc-despertar-da-cidadania.web.app/',
-    conceito: 'O <strong>Certifica ESG AgriFamiliar</strong> é um ecossistema digital pioneiro desenvolvido com o Instituto Despertar da Cidadania (IDC). Foi criado para diagnosticar, monitorar e valorizar as práticas ambientais, sociais e de governança (ESG) de pequenos agricultores e cooperativas familiares.',
-    utilidade: 'Permite aos técnicos de campo mapear glebas e propriedades rurais com GPS e satélite, emitir diagnósticos técnicos em tempo real, gerar laudos e certificados em PDF com QR Code dinâmico para auditoria de órgãos reguladores e bancos de crédito.',
-    funcionamento: 'Construído em <strong>React 19</strong> com <strong>TypeScript</strong> e <strong>Tailwind CSS</strong>. Mapeamento geoespacial via <strong>Leaflet GIS</strong> para desenho vetorial de polígonos. Visualização 3D de modelos da propriedade rural com <strong>Three.js</strong> (@react-three/fiber). Backend e banco relacional no <strong>Supabase (PostgreSQL)</strong> com Row Level Security (RLS) e aplicativo mobile híbrido via <strong>Capacitor</strong>.'
-  },
-  'Certifica-AgriFamiliar-ESG': {
-    category: 'web',
-    tag: 'SaaS / ESG',
-    image: 'assets/screenshots/Certifica-AgriFamiliar-ESG.png',
-    desc: 'Ecossistema completo de inovação tecnológica para ATER e conformidade ESG na agricultura familiar.',
-    demo: 'https://idc-despertar-da-cidadania.web.app/',
-    conceito: 'Plataforma de inovação socioambiental para capacitação técnica, geoprocessamento e emissão de laudos de sustentabilidade.',
-    utilidade: 'Coleta de dados online/offline no campo com geração automatizada de relatórios em PDF/Excel.',
-    funcionamento: 'React 19, TypeScript, Supabase/PostgreSQL, Leaflet GIS, Three.js 3D e Capacitor.'
   },
   'CurriculoReact': { 
     category: 'web', 
@@ -254,40 +291,10 @@ const PROJECT_META = {
     utilidade: 'Permite a potenciais clientes e recrutadores visualizar projetos, detalhes e solicitar orçamentos.',
     funcionamento: 'HTML5, CSS3 com variáveis e glassmorphism, JavaScript ES6+ e consumo da API pública do GitHub.'
   },
-  'MetroOn': {
-    category: 'mobile',
-    tag: 'Mobile / VLT',
-    desc: 'Aplicativo mobile voltado para usuários do VLT de Sobral-CE, com itinerários, rotas e horários em tempo real.',
-    demo: 'https://github.com/ocJew/metroon.app',
-    conceito: 'Solução de mobilidade urbana em tempo real para os usuários do transporte público sobre trilhos de Sobral.',
-    utilidade: 'Permite aos passageiros consultar itinerários e estações, reduzindo o tempo de espera nas paradas.',
-    funcionamento: 'Desenvolvido em <strong>React Native</strong> com consumo de rotas REST, componentes mobile performáticos e interface intuitiva.'
-  },
-  'metroon': {
-    category: 'mobile',
-    tag: 'Mobile',
-    desc: 'Aplicativo móvel para acompanhamento do VLT de Sobral-CE em React Native.',
-    demo: 'https://github.com/ocJew/metroon.app'
-  },
-  'Nullbank': {
-    category: 'academico',
-    tag: 'Java / Backend',
-    desc: 'Simulação de operações bancárias e microsserviços financeiros em Java 17, Spring Boot 3 e Apache Tomcat.',
-    conceito: 'Aplicação bancária robusta focada em regras de negócio financeiras, consistência de dados e segurança.',
-    utilidade: 'Simula abertura de contas, transferências com controle de saldo, autenticação segura e conciliação de transações.',
-    funcionamento: 'Construído em <strong>Java 17</strong> com <strong>Spring Boot 3</strong>, <strong>Spring Data JPA</strong>, <strong>Spring Security</strong>, Apache Tomcat e persistência relacional em PostgreSQL.'
-  },
-  'Placa_detect': {
-    category: 'ferramenta',
-    tag: 'IA / Visão Computacional',
-    desc: 'Reconhecimento Automático de Placas Veiculares (ALPR) com Redes Neurais YOLO e OpenCV em Docker.',
-    conceito: 'Pipeline de visão computacional para detecção, enquadramento morfológico e extração de caracteres de placas veiculares.',
-    utilidade: 'Aplicações em portarias inteligentes, cancelas de estacionamentos, controle de acesso e monitoramento de frotas.',
-    funcionamento: 'Desenvolvido em <strong>Python</strong> utilizando pesos pré-treinados de redes neurais <strong>YOLO</strong>, processamento digital de imagem com <strong>OpenCV</strong> e conteinerização em <strong>Docker</strong>.'
-  },
   'UniMove': {
     category: 'mobile',
     tag: 'Mobile / UFC',
+    image: 'assets/screenshots/UniMove.png',
     desc: 'Plataforma de integração e mobilidade acadêmica para a comunidade universitária da UFC Sobral.',
     conceito: 'Solução para facilitação de fluxos internos de transporte e integração para a comunidade discente.',
     utilidade: 'Conecta alunos que fazem rotas semelhantes, barateando custos e integrando o campus.',
@@ -296,75 +303,94 @@ const PROJECT_META = {
   'gerador-contratos-meruoca': {
     category: 'ferramenta',
     tag: 'Contratos / PDF',
+    image: 'assets/screenshots/gerador-contratos-meruoca.png',
     desc: 'Sistema de geração e gerenciamento automatizado de contratos para serviços municipais e projetos sociais.'
   },
   'plataforma-agricurso': {
     category: 'web',
     tag: 'EAD / Agricultura',
+    image: 'assets/screenshots/plataforma-agricurso.png',
     desc: 'Plataforma web educacional com cursos digitais e capacitação para a agricultura familiar.'
   },
   'sistema-fluxo-caixa': {
     category: 'web',
     tag: 'Finanças / PDV',
+    image: 'assets/screenshots/sistema-fluxo-caixa.png',
     desc: 'Sistema financeiro para controle de ponto de venda, fechamento e fluxo de caixa.'
   },
   'agendamento-transporte-bus': {
     category: 'mobile',
     tag: 'Mobilidade / Bus',
+    image: 'assets/screenshots/agendamento-transporte-bus.png',
     desc: 'Aplicação para gerenciamento de horários, listas de passageiros e agendamento de transporte.'
   },
   'game-platform-web': {
     category: 'web',
     tag: 'Jogos Web',
+    image: 'assets/screenshots/game-platform-web.png',
     desc: 'Plataforma de jogos web com catálogo de minigames interativos desenvolvidos em JavaScript e HTML5.'
   },
   'ecommerce-loja-virtual': {
     category: 'web',
     tag: 'E-commerce',
+    image: 'assets/screenshots/ecommerce-loja-virtual.png',
     desc: 'Sistema de e-commerce completo com catálogo de produtos, carrinho de compras e fluxo de checkout.'
   },
   'sistemas-tempo-real-escalonamento': {
     category: 'academico',
     tag: 'Java / STR',
+    image: 'assets/screenshots/sistemas-tempo-real-escalonamento.png',
     desc: 'Implementação e simulação de algoritmos de escalonamento para Sistemas de Tempo Real em Java.'
   },
   'banco-de-dados-ufc': {
     category: 'academico',
     tag: 'Banco de Dados',
+    image: 'assets/screenshots/banco-de-dados-ufc.png',
     desc: 'Projetos de modelagem relacional, scripts SQL, triggers e procedimentos armazenados (UFC).'
   },
   'testes-unitarios-junit-java': {
     category: 'academico',
     tag: 'Java / JUnit',
+    image: 'assets/screenshots/testes-unitarios-junit-java.png',
     desc: 'Repositório prático com exemplos de arquitetura e implementação de testes unitários em Java com JUnit.'
   },
   'testes-automatizados-java': {
     category: 'academico',
     tag: 'Java / Testes',
+    image: 'assets/screenshots/testes-automatizados-java.png',
     desc: 'Estudo e implementação de boas práticas de cobertura de código e testes automatizados em Java.'
   },
   'extensao-overleaf-latex': {
     category: 'ferramenta',
     tag: 'Extensão / LaTeX',
+    image: 'assets/screenshots/extensao-overleaf-latex.png',
     desc: 'Extensão para navegadores que otimiza e aprimora a produtividade no editor LaTeX online Overleaf.'
   },
   'VendaSaas': {
     category: 'web',
     tag: 'SaaS / Vendas',
+    image: 'assets/screenshots/VendaSaas.png',
     desc: 'Plataforma completa de automação comercial e gestão de assinaturas SaaS com painel administrativo.'
-  },
-  'Ruanggd123': {
-    category: 'ferramenta',
-    tag: 'Perfil GitHub',
-    desc: 'Repositório especial de Profile README no GitHub com currículo ATS, estatísticas e certificações.',
-    demo: 'https://github.com/Ruanggd123'
   },
   'english-immersion-os': {
     category: 'ferramenta',
     tag: 'Ferramenta / IA',
+    image: 'assets/screenshots/english-immersion-os.png',
     desc: 'Ambiente interativo de imersão e prática de inglês com IA para conversação e vocabulário técnico.'
   },
-  'SGLS_TEC_WEB': { category: 'web', tag: 'Web', desc: 'Sistema gerencial desenvolvido para disciplina de Tecnologias Web.' }
+  'Ruanggd123': {
+    category: 'ferramenta',
+    tag: 'Perfil GitHub',
+    image: 'assets/screenshots/portfolio.png',
+    desc: 'Repositório especial de Profile README no GitHub com currículo ATS, estatísticas e certificações.',
+    demo: 'https://github.com/Ruanggd123'
+  },
+  'SGLS_TEC_WEB': { 
+    category: 'web', 
+    tag: 'Web', 
+    image: 'assets/screenshots/TecWebTarefa1.png',
+    desc: 'Sistema gerencial desenvolvido para disciplina de Tecnologias Web.' 
+  }
 };
 
 const langIcons = {
@@ -448,7 +474,6 @@ function filterRelevantRepos(repos) {
   return repos
     .filter(r => r.name !== 'baseTeste' && r.name !== 'base' && r.name !== 'php_base')
     .sort((a, b) => {
-      // Prioridade máxima para projetos que possuem demonstração ao vivo ou estão no PINNED_PROJECTS
       const metaA = PROJECT_META[a.name];
       const metaB = PROJECT_META[b.name];
       const hasDemoA = (metaA && metaA.demo) ? 2 : (metaA ? 1 : 0);
@@ -494,9 +519,8 @@ function renderProjects(repos, filter = 'all') {
     // Tratamento de URL para demo / site funcionando
     const finalDemoUrl = meta.demo ? meta.demo : (repo.homepage && repo.homepage.trim() !== '' ? repo.homepage : '');
 
-    // Imagem do projeto (se houver screenshot local capturado, usa ele prioritariamente)
+    // Imagem do projeto (sempre prioriza a imagem local ou do meta)
     const projectImg = meta.image || `assets/screenshots/${repo.name}.png`;
-    const fallbackOpenGraph = `https://opengraph.githubassets.com/1/${GITHUB_USER}/${repo.name}`;
 
     // Tag e status online
     const onlineBadge = finalDemoUrl !== ''
@@ -514,7 +538,10 @@ function renderProjects(repos, filter = 'all') {
                alt="${repo.name}" 
                class="project-image" 
                loading="lazy"
-               onerror="this.onerror=null; this.src='${fallbackOpenGraph}';" />
+               onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';" />
+          <div class="project-image-fallback" style="display:none; height:160px; justify-content:center; align-items:center; background:linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); border-bottom:1px solid var(--border);">
+             <i class="${langIcon}" style="font-size: 3.5rem; color: ${langColor}; opacity: 0.7;"></i>
+          </div>
         </div>
         <div class="project-header">
           <div class="project-icon" style="color:${langColor}">
@@ -614,10 +641,10 @@ window.openProjectModal = function(btn) {
   iconEl.style.color = langColor;
 
   const modalImg = document.getElementById('modal-image');
+  modalImg.style.display = 'block';
   modalImg.src = imageUrl;
   modalImg.onerror = function() {
-    this.onerror = null;
-    this.src = `https://opengraph.githubassets.com/1/${GITHUB_USER}/${repo.name}`;
+    this.style.display = 'none';
   };
 
   document.getElementById('modal-concept').innerHTML = meta.conceito || meta.desc || 'Conceito não detalhado ainda.';
