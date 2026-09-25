@@ -18,6 +18,26 @@ const PINNED_PROJECTS = [
     fork: false
   },
   {
+    name: 'concurso-meruoca',
+    description: 'Plataforma de estudos, cronograma e simulados com gerador de questões para o Concurso da Câmara de Meruoca-CE (Técnico Legislativo).',
+    language: 'HTML',
+    html_url: 'https://github.com/Ruanggd123/concurso-meruoca',
+    homepage: 'https://ruanggd123.github.io/concurso-meruoca/',
+    stargazers_count: 4,
+    updated_at: '2026-09-24T19:00:00Z',
+    fork: false
+  },
+  {
+    name: 'concurso-tj-ce',
+    description: 'Plataforma de estudos com edital verticalizado, cronograma e materiais organizados para o Concurso do TJ-CE (Tribunal de Justiça do Ceará).',
+    language: 'Python',
+    html_url: 'https://github.com/Ruanggd123/concurso-tj-ce',
+    homepage: 'https://github.com/Ruanggd123/concurso-tj-ce',
+    stargazers_count: 3,
+    updated_at: '2026-09-23T10:00:00Z',
+    fork: false
+  },
+  {
     name: 'CurriculoReact',
     description: 'Currículo digital interativo em React 19 + TypeScript + Tailwind CSS com busca e filtros dinâmicos.',
     language: 'TypeScript',
@@ -35,16 +55,6 @@ const PINNED_PROJECTS = [
     homepage: 'https://ruanggd123.github.io/echo-world/',
     stargazers_count: 4,
     updated_at: '2026-09-22T14:00:00Z',
-    fork: false
-  },
-  {
-    name: 'meruoca',
-    description: 'Portal institucional e social com serviços públicos, projetos comunitários e informações municipais de Meruoca-CE.',
-    language: 'HTML',
-    html_url: 'https://github.com/Ruanggd123/meruoca',
-    homepage: 'https://ruanggd123.github.io/meruoca/',
-    stargazers_count: 3,
-    updated_at: '2026-09-21T19:00:00Z',
     fork: false
   },
   {
@@ -101,6 +111,39 @@ const PINNED_PROJECTS = [
 
 /* Metadados detalhados de cada projeto com imagens reais de funcionamento e textos explicativos */
 const PROJECT_META = {
+  'concurso-meruoca': {
+    category: 'web',
+    tag: 'Concurso / Meruoca',
+    image: 'assets/screenshots/concurso-meruoca.png',
+    desc: 'Plataforma de estudos, cronograma e simulados interativos com gerador de questões para o Concurso da Câmara de Meruoca-CE (Técnico Legislativo).',
+    demo: 'https://ruanggd123.github.io/concurso-meruoca/',
+    conceito: 'Ambiente de preparação intensiva desenvolvido especificamente para o Concurso Público da Câmara Municipal de Meruoca-CE (Cargo de Técnico Legislativo). O projeto reúne plano mestre de estudos diários, banco de questões com gabarito comentado e provas anteriores.',
+    utilidade: 'Permite ao candidato organizar sua rotina de estudos, testar conhecimentos com simulados dinâmicos divididos por semanas e dias, e avaliar seu percentual de acertos em Legislação Municipal, Direito e Português.',
+    funcionamento: 'Construído com <strong>HTML5</strong>, <strong>CSS3 moderno</strong> e rotinas em <strong>Python</strong> para raspagem, injeção e validação automatizada de questões (`validate_questions.py`, `gerar_questoes_simulado_real.py`). Interface rápida, responsiva e com feedback visual de respostas certas e erradas.'
+  },
+  'meruoca': {
+    category: 'web',
+    tag: 'Concurso / Meruoca',
+    image: 'assets/screenshots/concurso-meruoca.png',
+    desc: 'Plataforma de estudos, cronograma e simulados com gerador de questões para o Concurso da Câmara de Meruoca-CE.',
+    demo: 'https://ruanggd123.github.io/concurso-meruoca/'
+  },
+  'concurso-tj-ce': {
+    category: 'web',
+    tag: 'Concurso / TJ-CE',
+    desc: 'Plataforma de estudos com edital verticalizado, cronograma e materiais organizados para o Concurso do TJ-CE (Tribunal de Justiça do Ceará).',
+    conceito: 'Solução de organização e acompanhamento de metas para o edital do Tribunal de Justiça do Estado do Ceará.',
+    utilidade: 'Auxilia concurseiros a monitorar o avanço de cada tópico do edital com cronograma diário estruturado.',
+    funcionamento: 'Scripts em Python para merge e organização de matérias, arquivos em Markdown para edital verticalizado e painel de estudos.'
+  },
+  'tcc-aprendizado-federado': {
+    category: 'academico',
+    tag: 'Acadêmico / TCC',
+    desc: 'TCC em Engenharia de Computação (UFC Sobral): Avaliação de Algoritmos de Agregação Robusta em Aprendizado Federado sob Cenários Adversos.',
+    conceito: 'Pesquisa científica acadêmica avaliando técnicas de defesa e robustez contra ataques bizantinos e dados envenenados em Aprendizado Federado (Federated Learning).',
+    utilidade: 'Garante que modelos de Inteligência Artificial distribuídos continuem convergindo mesmo quando nós participantes enviam dados corrompidos ou maliciosos.',
+    funcionamento: 'Implementado em Python com PyTorch / Flower, simulando múltiplos clientes heterogêneos e aplicando regras de agregação robustas (Krum, Trimmed Mean, Median).'
+  },
   'Certifica-ESG-AgriFamiliar': {
     category: 'web',
     tag: 'SaaS / ESG',
@@ -141,16 +184,6 @@ const PROJECT_META = {
     utilidade: 'Demonstra domínio avançado de WebGL, Three.js, shaders GLSL customizados, game loop a 60 FPS e cálculos matemáticos de vetores e matrizes para movimentação e colisões dinâmicas.',
     funcionamento: 'Desenvolvido em <strong>TypeScript</strong> com a biblioteca <strong>Three.js</strong>. Integra motor de física de corpos rígidos para colisão com terreno e obstáculos, sistema de partículas e iluminação dinâmica em tempo real.'
   },
-  'meruoca': {
-    category: 'web',
-    tag: 'Web Social',
-    image: 'assets/screenshots/meruoca.png',
-    desc: 'Portal institucional e social com serviços públicos, projetos comunitários e informações municipais de Meruoca-CE.',
-    demo: 'https://ruanggd123.github.io/meruoca/',
-    conceito: 'Plataforma web de utilidade pública focada em aproximar a população local de iniciativas culturais, projetos de capacitação digital (como o projeto "Entrando no Jogo") e serviços essenciais.',
-    utilidade: 'Centraliza informações municipais, horários de atendimento, notícias e links de utilidade pública em uma interface intuitiva acessível a qualquer cidadão.',
-    funcionamento: 'Construído com <strong>HTML5 semântico</strong>, <strong>CSS3 moderno</strong> (Flexbox e Grid) e <strong>JavaScript vanilla</strong>. Layout ultra-otimizado para dispositivos móveis com baixo consumo de dados e velocidade de carregamento instantânea.'
-  },
   'idc_website': {
     category: 'web',
     tag: 'Institucional',
@@ -181,6 +214,16 @@ const PROJECT_META = {
     utilidade: 'Ferramenta descontraída para ativação de público em redes sociais e análise comparativa de crescimento.',
     funcionamento: 'JavaScript, transições dinâmicas de CSS3, cálculo proporcional de barras de energia e atualização instantânea de pontuações.'
   },
+  'gerador-formularios-web': {
+    category: 'ferramenta',
+    tag: 'Ferramenta',
+    image: 'assets/screenshots/gerador-formularios-web.png',
+    desc: 'Gerador e validador minimalista de formulários com formatação e validações Regex em tempo real.',
+    demo: 'https://ruanggd123.github.io/gerador-formularios-web/',
+    conceito: 'Utilitário leve para validação rápida de entradas de formulário e testes de experiência do usuário.',
+    utilidade: 'Permite capturar inscrições de forma direta sem fricção.',
+    funcionamento: 'JavaScript vanilla com validações Regex em tempo real.'
+  },
   'Modelo_Curriculo': { 
     category: 'ferramenta', 
     tag: 'Template Web',
@@ -190,16 +233,6 @@ const PROJECT_META = {
     conceito: 'Layout padronizado para quem precisa de um currículo online rápido, elegante e sem excesso de dependências.',
     utilidade: 'Template open source pronto para ser clonado e preenchido por outros estudantes e desenvolvedores.',
     funcionamento: 'HTML semântico com folhas de estilo CSS dedicadas a impressão (@media print) para conversão perfeita em PDF.'
-  },
-  'formSimples': { 
-    category: 'ferramenta', 
-    tag: 'Ferramenta',
-    image: 'assets/screenshots/formSimples.png',
-    desc: 'Gerador minimalista de formulários com validações de dados no cliente e formatação automática de campos.', 
-    demo: 'https://ruanggd123.github.io/formSimples/',
-    conceito: 'Utilitário leve para validação rápida de entradas de formulário e testes de experiência do usuário.',
-    utilidade: 'Permite capturar inscrições de forma direta sem fricção.',
-    funcionamento: 'JavaScript vanilla com validações Regex em tempo real.'
   },
   'TecWebTarefa1': { 
     category: 'academico', 
@@ -234,10 +267,7 @@ const PROJECT_META = {
     category: 'mobile',
     tag: 'Mobile',
     desc: 'Aplicativo móvel para acompanhamento do VLT de Sobral-CE em React Native.',
-    demo: 'https://github.com/ocJew/metroon.app',
-    conceito: 'Mobilidade urbana em tempo real para os usuários do transporte público de Sobral.',
-    utilidade: 'Consulta rápida de itinerários e estações.',
-    funcionamento: 'React Native com navegação nativa e APIs REST.'
+    demo: 'https://github.com/ocJew/metroon.app'
   },
   'Nullbank': {
     category: 'academico',
@@ -263,48 +293,78 @@ const PROJECT_META = {
     utilidade: 'Conecta alunos que fazem rotas semelhantes, barateando custos e integrando o campus.',
     funcionamento: 'React e APIs REST com interface focada em facilidade de uso.'
   },
+  'gerador-contratos-meruoca': {
+    category: 'ferramenta',
+    tag: 'Contratos / PDF',
+    desc: 'Sistema de geração e gerenciamento automatizado de contratos para serviços municipais e projetos sociais.'
+  },
+  'plataforma-agricurso': {
+    category: 'web',
+    tag: 'EAD / Agricultura',
+    desc: 'Plataforma web educacional com cursos digitais e capacitação para a agricultura familiar.'
+  },
+  'sistema-fluxo-caixa': {
+    category: 'web',
+    tag: 'Finanças / PDV',
+    desc: 'Sistema financeiro para controle de ponto de venda, fechamento e fluxo de caixa.'
+  },
+  'agendamento-transporte-bus': {
+    category: 'mobile',
+    tag: 'Mobilidade / Bus',
+    desc: 'Aplicação para gerenciamento de horários, listas de passageiros e agendamento de transporte.'
+  },
+  'game-platform-web': {
+    category: 'web',
+    tag: 'Jogos Web',
+    desc: 'Plataforma de jogos web com catálogo de minigames interativos desenvolvidos em JavaScript e HTML5.'
+  },
+  'ecommerce-loja-virtual': {
+    category: 'web',
+    tag: 'E-commerce',
+    desc: 'Sistema de e-commerce completo com catálogo de produtos, carrinho de compras e fluxo de checkout.'
+  },
+  'sistemas-tempo-real-escalonamento': {
+    category: 'academico',
+    tag: 'Java / STR',
+    desc: 'Implementação e simulação de algoritmos de escalonamento para Sistemas de Tempo Real em Java.'
+  },
+  'banco-de-dados-ufc': {
+    category: 'academico',
+    tag: 'Banco de Dados',
+    desc: 'Projetos de modelagem relacional, scripts SQL, triggers e procedimentos armazenados (UFC).'
+  },
+  'testes-unitarios-junit-java': {
+    category: 'academico',
+    tag: 'Java / JUnit',
+    desc: 'Repositório prático com exemplos de arquitetura e implementação de testes unitários em Java com JUnit.'
+  },
+  'testes-automatizados-java': {
+    category: 'academico',
+    tag: 'Java / Testes',
+    desc: 'Estudo e implementação de boas práticas de cobertura de código e testes automatizados em Java.'
+  },
+  'extensao-overleaf-latex': {
+    category: 'ferramenta',
+    tag: 'Extensão / LaTeX',
+    desc: 'Extensão para navegadores que otimiza e aprimora a produtividade no editor LaTeX online Overleaf.'
+  },
   'VendaSaas': {
     category: 'web',
     tag: 'SaaS / Vendas',
-    desc: 'Plataforma de automação comercial e gestão de assinaturas SaaS com painel administrativo.',
-    conceito: 'Sistema completo para comercialização e gestão de licenças de software na nuvem.',
-    utilidade: 'Controle de planos, gestão financeira e provisionamento automático de acessos.',
-    funcionamento: 'Node.js, React e banco de dados relacional com integração a gateways de pagamento.'
-  },
-  'AutoVendas': {
-    category: 'web',
-    tag: 'Automação',
-    desc: 'Solução automatizada para funil de vendas, CRM e disparos de notificações comerciais.',
-    conceito: 'Agilidade na conversão de leads com automação de etapas do processo comercial.',
-    utilidade: 'Aumenta a eficiência operacional reduzindo tempo de resposta ao cliente.',
-    funcionamento: 'APIs REST, banco de dados e rotinas assíncronas de integração.'
+    desc: 'Plataforma completa de automação comercial e gestão de assinaturas SaaS com painel administrativo.'
   },
   'Ruanggd123': {
     category: 'ferramenta',
     tag: 'Perfil GitHub',
     desc: 'Repositório especial de Profile README no GitHub com currículo ATS, estatísticas e certificações.',
-    demo: 'https://github.com/Ruanggd123',
-    conceito: 'Página inicial personalizada do perfil do GitHub, servindo como cartão de visitas técnico.',
-    utilidade: 'Apresenta de forma clara as tecnologias, links sociais e download direto do currículo em PDF.',
-    funcionamento: 'Markdown avançado com Shields.io badges, APIs dinâmicas do GitHub e assets em nuvem.'
+    demo: 'https://github.com/Ruanggd123'
   },
   'english-immersion-os': {
     category: 'ferramenta',
     tag: 'Ferramenta / IA',
-    desc: 'Ambiente interativo de imersão e prática de inglês com IA para conversação e vocabulário técnico.',
-    conceito: 'Plataforma para acelerar a fluência na língua inglesa combinando feedback imediato e escuta ativa.',
-    utilidade: 'Auxilia desenvolvedores a aprimorarem inglês técnico para entrevistas internacionais.',
-    funcionamento: 'Desenvolvido em TypeScript com rotinas interativas e integração de prompts linguísticos.'
+    desc: 'Ambiente interativo de imersão e prática de inglês com IA para conversação e vocabulário técnico.'
   },
-  'Rifas': { category: 'web', tag: 'Web', desc: 'Sistema completo de rifas online com gerador de números, controle de participantes e painel administrativo.' },
-  'SEFAZ-CE': { category: 'web', tag: 'Web', desc: 'Automação e integração relacionada à SEFAZ-CE para processamento de dados fiscais.' },
-  'SGLS_TEC_WEB': { category: 'web', tag: 'Web', desc: 'Sistema gerencial desenvolvido para disciplina de Tecnologias Web.' },
-  'tcc': { category: 'academico', tag: 'Acadêmico / TCC', desc: 'TCC em Engenharia de Computação — Algoritmos de Agregação Robusta em Aprendizado Federado (UFC Sobral).' },
-  'Trabalho_Pratico_02_Computacao_Grafica': { category: 'academico', tag: 'Computação Gráfica', desc: 'Trabalho prático de Computação Gráfica com renderização e transformações 2D/3D.' },
-  'STR_Escalonamento': { category: 'academico', tag: 'Sistemas Operacionais', desc: 'Implementação de algoritmos de escalonamento em tempo real (Sistemas Operacionais).' },
-  'BancoDeDados': { category: 'academico', tag: 'Bancos de Dados', desc: 'Modelagem relacional, scripts SQL e procedimentos armazenados.' },
-  'AdicionandoTestsComJUnit': { category: 'academico', tag: 'Java / Testes', desc: 'Testes unitários e de integração em Java utilizando JUnit.' },
-  'implementacaoDeTestsEmJava': { category: 'academico', tag: 'Java / Testes', desc: 'Práticas de arquitetura de testes e cobertura de código em Java.' }
+  'SGLS_TEC_WEB': { category: 'web', tag: 'Web', desc: 'Sistema gerencial desenvolvido para disciplina de Tecnologias Web.' }
 };
 
 const langIcons = {
